@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contenedor-img {
+    flex: 1;
+    max-width: 400px;
+    background-color: #ececec;
+    text-align: center;
+    padding: 20px;
+}
+
+.foto {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.contenedo-InfoP {
+    background-color: #7444ec;
+    color: #fff;
+    padding: 20px;
+}
+
+.informacion h3 {
+    margin-bottom: 10px;
+}
+
+.informacion p {
+    margin-bottom: 15px;
+}
+
+.contenedo-infoG {
+    flex: 2;
+    padding: 20px;
+    height: 1050px;
+    overflow-y: auto;
+}
+
+.cargo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cargo .nombre {
+    font-size: 2em;
+    font-weight: bold;
+    color: #7444ec;
+}
+
+.cargo p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+h3, h2 {
+    color: #7444ec;
+    margin-bottom: 10px;
+}
+
+.contenedo-resumen,
+.contenedor-habilidaes,
+.contenedor-experiencia,
+.contenedor-formacion {
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.experiencia, .Fo-academica {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column;
+    }
+
+    .contenedor-img, .contenedo-infoG {
+        max-width: 100%;
+    }
+}
+footer {
+    background-color: #454444; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Centrar contenido */
+    padding: 20px 10px; /* Espaciado interno */
+    font-family: Arial, sans-serif; /* Fuente sencilla */
+}
+
+footer div {
+    margin-bottom: 10px; /* Espaciado entre secciones */
+}
+
+footer h3 {
+    margin: 0; /* Eliminar margen del título */
+    font-size: 18px; /* Tamaño del texto del título */
+}
+
+footer p {
+    margin: 5px 0; /* Espaciado pequeño arriba y abajo */
+    font-size: 14px; /* Tamaño pequeño para el texto */
+    line-height: 1.5; /* Altura de línea cómoda */
+}
+
+.wp-block-social-links {
+    display: flex; /* Alinear horizontalmente */
+    justify-content: center; /* Centrar contenido */
+    gap: 15px; /* Separación entre íconos */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Eliminar puntos de la lista */
+}
+
+.wp-block-social-link-anchor {
+    color: #fff; /* Color de los íconos */
+    text-decoration: none; /* Sin subrayado */
+    transition: transform 0.2s, color 0.2s; /* Animación al pasar el cursor */
+}
+
+.wp-block-social-link-anchor:hover {
+    color: #00bcd4; /* Cambiar color al pasar el cursor */
+    transform: scale(1.1); /* Agrandar un poco al pasar el cursor */
+}
+
+.wp-block-social-link svg {
+    width: 24px; /* Tamaño de los íconos */
+    height: 24px;
+}
